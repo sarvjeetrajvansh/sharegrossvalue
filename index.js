@@ -10,14 +10,14 @@ function checkGrossValue(){
         //loss
         let loss=initialPrice-currentPrice;
         let lossPercentage=(loss*100)/initialPrice;
-        output.innerText='Yay! You are in loss of '+loss*quantity+'and loss percentage is  '+lossPercentage.toFixed(2)+'%' ;
+        output.innerText='Ahh! You are in loss of '+loss*quantity+'and loss percentage is  '+lossPercentage.toFixed(2)+'%' ;
         output.style.color = 'red';
     }
     else if(currentPrice>initialPrice){
         //profit
         let profit=currentPrice-initialPrice;
         let profitpercentage=(profit*100)/initialPrice;
-        output.innerText='Ahh! You are in profit of '+profit*quantity+'and profit percentage is : '+profitpercentage.toFixed(2)+'%' ;
+        output.innerText='Yay! You are in profit of '+profit*quantity+'and profit percentage is : '+profitpercentage.toFixed(2)+'%' ;
         output.style.color = 'green';
     }
     else{
